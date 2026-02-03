@@ -69,33 +69,55 @@ Then POST to `http://127.0.0.1:8000/predict`.
 
 
 ```
-ml-system/
+customer sales prediction system/
+├── artifacts/
+│   ├── customer_sales_prediction.joblib
+│   └── metadata.json
+├── configs/
+│   ├── data.yml
+│   ├── model.yml
+│   └── training.yml
 ├── data/
 │   ├── raw/
-│   ├── processed/
-│   └── features/
-├── configs/
-│   ├── data.yaml
-│   ├── model.yaml
-│   └── training.yaml
-├── src/
-│   ├── data/
-│   ├── features/
-│   ├── models/
-│   ├── serving/
-│   └── monitoring/
-├── pipelines/
-├── tests/
+│   │   └── customer sales prediction dataset.csv
+│   ├── test/
+│   │   └── test.csv
+│   └── train/
+│       └── train.csv
 ├── docker/
-scripts/
-├── train.py
-├── serve.py
-├── batch_predict.py
-
-├── requirements.txt
+│   └── Dockerfile
+├── pipelines/
+│   └── train_pipeline.py
+├── scripts/
+│   ├── batch_predict.py
+│   ├── serve.py
+│   └── train.py
+├── src/
+│   ├── __init__.py
+│   ├── data/
+│   │   ├── __init__.py
+│   │   ├── ingetion.py
+│   │   ├── preprocessing.py
+│   │   └── validation.py
+│   ├── features/
+│   │   ├── __init__.py
+│   │   └── build_features.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── evaluate.py
+│   │   └── train_model.py
+│   └── serving/
+│       ├── __init__.py
+│       ├── api.py
+│       └── schemas.py
+├── tests/
+│   ├── test_data.py
+│   ├── test_features.py
+│   ├── test_model.py
+│   └── test_serving.py
+├── customer sales.ipynb
 ├── pyproject.toml
-└── README.md
-
-
+├── README.md
+└── requirements.txt
 ```
 
