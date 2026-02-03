@@ -3,10 +3,10 @@
 SalesPulse ML is a production‑ready customer sales prediction system that ingests raw sales data, validates and preprocesses it, builds features, trains a model, and serves predictions through a simple API. The project includes pipelines for training and batch inference, reproducible configs, and saved artifacts for deployment, making it easy to iterate from experimentation to reliable, real‑world usage.
 <img width="736" height="524" alt="image" src="https://github.com/user-attachments/assets/f6d627ec-1a39-47c7-9904-e72db8b3913f" />
 
-## System Architecture
+## System Architecture   
 
 ```mermaid
-flowchart LR
+flowchart LR 
 	A[Raw CSV Data] --> B[Data Ingestion]
 	B --> C[Validation]
 	C --> D[Preprocessing]
