@@ -1,0 +1,9 @@
+random_forest:
+  n_estimators: 5000
+  max_depth: 40
+  min_samples_split: 20
+  min_samples_leaf: 10
+  max_features: sqrt
+  bootstrap: true
+  oob_score: true
+  random_state: 42

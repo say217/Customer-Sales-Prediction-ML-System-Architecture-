@@ -1,0 +1,14 @@
+target: monthly_sales
+
+numerical_features:
+  - age
+  - annual_income
+  - website_visits
+  - time_on_site
+  - discount_rate
+  - past_purchases
+
+categorical_features:
+  - region
+  - device_type
+  - membership_level
